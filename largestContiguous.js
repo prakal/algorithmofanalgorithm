@@ -14,6 +14,15 @@
 
 var largestContiguousSum = function (array) {
   // TODO: Implement
+  var sum = 0;
+  var maxSum = 0;
+  var i = 0;
+  while (i < array.length){
+  	sum+=array[i];
+  	maxSum = Math.max(maxSum,sum);
+  	i++;
+  }
+  return maxSum;
 };
 
 
